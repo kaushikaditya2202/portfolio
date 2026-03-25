@@ -64,7 +64,7 @@ export function Projects() {
               whileHover={{ y: -10, scale: 1.02 }}
               className="group"
             >
-              <Card className="bg-gray-900/50 border-gray-700/50 hover:border-blue-400/50 transition-all duration-300 overflow-hidden relative">
+              <Card className="bg-gray-900/90 backdrop-blur-sm border-gray-700/50 hover:border-blue-400/50 transition-all duration-300 overflow-hidden relative">
                 <div className={`absolute inset-0 bg-gradient-to-br ${project.gradient} opacity-0 group-hover:opacity-5 transition-opacity duration-300`} />
                 
                 <CardHeader className="relative">

@@ -4,7 +4,7 @@ import { Brain, Cpu, Zap } from 'lucide-react';
 
 export function Hero() {
   return (
-    <section className="min-h-screen flex items-center justify-center px-6 relative">
+    <section className="min-h-[70vh] md:min-h-screen flex items-center justify-center px-6 relative py-12 md:py-0">
       <div className="text-center max-w-4xl">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
