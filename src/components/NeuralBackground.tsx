@@ -32,7 +32,7 @@ export function NeuralBackground() {
     }
 
     function animate() {
-      ctx.fillStyle = 'rgba(2, 8, 23, 0.05)';
+      ctx.fillStyle = 'rgba(10, 15, 30, 0.05)';
       ctx.fillRect(0, 0, canvas.width, canvas.height);
 
       // Update and draw nodes
@@ -83,7 +83,7 @@ export function NeuralBackground() {
     <canvas
       ref={canvasRef}
       className="fixed inset-0 w-full h-full pointer-events-none"
-      style={{ background: 'linear-gradient(135deg, #020817 0%, #0f172a 100%)' }}
+      style={{ background: 'linear-gradient(135deg, #0a0f1e 0%, #1a2b4b 100%)' }}
     />
   );
 }
