@@ -12,7 +12,7 @@ export function Hero() {
           transition={{ duration: 0.8 }}
           className="mb-8"
         >
-          <h1 className="text-6xl md:text-8xl font-bold mb-4">
+          <h1 className="text-4xl sm:text-6xl md:text-8xl font-bold mb-4">
             {"ADITYA KAUSHIK".split("").map((letter, index) => (
               <motion.span
                 key={index}
@@ -42,7 +42,7 @@ export function Hero() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.5, duration: 0.8 }}
-            className="text-3xl md:text-5xl font-bold text-white mb-6"
+            className="text-2xl md:text-5xl font-bold text-white mb-6"
           >
             Welcome to My Portfolio
           </motion.div>
@@ -61,7 +61,7 @@ export function Hero() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1.2, duration: 0.8 }}
-          className="flex justify-center space-x-8 mb-12"
+          className="flex justify-center flex-wrap gap-4 md:gap-8 mb-12"
         >
           {[Brain, Cpu, Zap].map((Icon, index) => (
             <motion.div
@@ -76,7 +76,7 @@ export function Hero() {
               }}
               className="p-4 rounded-full bg-gradient-to-r from-blue-500/20 to-purple-500/20 border border-blue-400/30"
             >
-              <Icon size={40} className="text-blue-400" />
+              <Icon size={32} className="text-blue-400 md:w-10 md:h-10" />
             </motion.div>
           ))}
         </motion.div>

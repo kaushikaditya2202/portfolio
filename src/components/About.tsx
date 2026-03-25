@@ -57,7 +57,7 @@ export function About() {
               passionate about making AI accessible and impactful.
             </p>
 
-            <div className="flex items-center space-x-6 text-gray-400">
+            <div className="flex flex-wrap items-center gap-4 md:gap-6 text-gray-400">
               <div className="flex items-center space-x-2">
                 <Code className="text-blue-400" size={20} />
                 <span>Fluent in algorithms</span>
