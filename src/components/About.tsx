@@ -57,11 +57,7 @@ export function About() {
               API development, and solving real-world problems through applied research.
             </p>
 
-            <div className="flex flex-col space-y-2 text-gray-400 mb-6 font-mono text-sm">
-              <p>Email: kaushik.aditya2202@gmail.com</p>
-              <p>Phone: +91 8210282166</p>
-              <p>Location: Pune, Maharashtra</p>
-            </div>
+
 
             <div className="flex flex-wrap items-center gap-4 md:gap-6 text-gray-400">
               <div className="flex items-center space-x-2">

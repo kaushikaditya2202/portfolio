@@ -32,15 +32,6 @@ export function Projects() {
       gradient: "from-green-500 to-emerald-600",
       demo: "https://data-collection-snowy-five.vercel.app/",
       github: "https://github.com/kaushikaditya2202/data_collection"
-    },
-    {
-      title: "PharmaOracle AI",
-      description: "Advanced AI drug and health intelligence platform built for health intelligence and data-driven optimization.",
-      icon: Brain,
-      tech: ["Python", "NLP", "Health-AI", "Production ML"],
-      gradient: "from-orange-500 to-red-600",
-      demo: "#",
-      github: "#"
     }
   ];
 
