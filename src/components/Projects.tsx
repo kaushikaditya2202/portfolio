@@ -12,7 +12,7 @@ export function Projects() {
       icon: ShoppingCart,
       tech: ["React", "FastAPI", "AWS DynamoDB", "EC2"],
       gradient: "from-blue-500 to-indigo-600",
-      demo: "#",
+      demo: "https://ak-store-rxl.vercel.app/#",
       github: "https://github.com/kaushikaditya2202/ak_store"
     },
     {
