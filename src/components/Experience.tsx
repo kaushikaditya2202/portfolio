@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'motion/react';
-import { Briefcase, GraduationCap, TrendingUp } from 'lucide-react';
+import { Briefcase, GraduationCap, TrendingUp, Code } from 'lucide-react';
 
 export function Experience() {
   const experiences = [
