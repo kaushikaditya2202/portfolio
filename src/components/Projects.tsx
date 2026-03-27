@@ -1,35 +1,44 @@
 import React from 'react';
 import { motion } from 'motion/react';
-import { ExternalLink, Github, ChefHat, Bot, BarChart3 } from 'lucide-react';
+import { ExternalLink, Github, Brain, ShoppingCart, Zap, Smartphone } from 'lucide-react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from './ui/card';
 import { Button } from './ui/button';
 
 export function Projects() {
   const projects = [
     {
-      title: "What Are You Craving?",
-      description: "LLM-powered recipe recommendation app that understands your cravings and suggests personalized recipes",
-      icon: ChefHat,
-      tech: ["Python", "LangChain", "Streamlit", "OpenAI"],
-      gradient: "from-orange-400 to-red-500",
+      title: "AK Store",
+      description: "Robust e-commerce platform with a React frontend and FastAPI backend. Features AWS DynamoDB storage and optimized deployment on EC2.",
+      icon: ShoppingCart,
+      tech: ["React", "FastAPI", "AWS DynamoDB", "EC2"],
+      gradient: "from-blue-500 to-indigo-600",
       demo: "#",
-      github: "#"
+      github: "https://github.com/kaushikaditya2202/ak_store"
     },
     {
-      title: "Butter Bot Explorer",
-      description: "AI-powered game featuring intelligent agents using A* search algorithm for pathfinding and decision making",
-      icon: Bot,
-      tech: ["Python", "A* Algorithm", "Pygame"],
-      gradient: "from-blue-400 to-purple-500",
-      demo: "#",
-      github: "#"
+      title: "PromptVerse",
+      description: "Curated platform for GenAI prompts with a live Google Sheets CMS. Real-time prompt management without redeployment.",
+      icon: Zap,
+      tech: ["React", "Google Sheets API", "GenAI", "Tailwind"],
+      gradient: "from-purple-500 to-pink-500",
+      demo: "https://promptverse-ak.vercel.app",
+      github: "https://github.com/kaushikaditya2202/prompt-verse"
     },
     {
-      title: "London AirBnB Analysis",
-      description: "Comprehensive data visualization dashboard analyzing London AirBnB market trends and pricing patterns",
-      icon: BarChart3,
-      tech: ["Power BI", "Python", "Pandas", "Data Viz"],
-      gradient: "from-green-400 to-blue-500",
+      title: "Clinical Data Collector",
+      description: "Mobile-first web app for medical data collection. Captures multi-angle photos/videos with direct device storage via File System API.",
+      icon: Smartphone,
+      tech: ["JavaScript", "File System API", "Medical-IT", "Vercel"],
+      gradient: "from-green-500 to-emerald-600",
+      demo: "https://data-collection-snowy-five.vercel.app/",
+      github: "https://github.com/kaushikaditya2202/data_collection"
+    },
+    {
+      title: "PharmaOracle AI",
+      description: "Advanced AI drug and health intelligence platform built for health intelligence and data-driven optimization.",
+      icon: Brain,
+      tech: ["Python", "NLP", "Health-AI", "Production ML"],
+      gradient: "from-orange-500 to-red-600",
       demo: "#",
       github: "#"
     }
@@ -66,7 +75,7 @@ export function Projects() {
             >
               <Card className="bg-gray-900/90 backdrop-blur-sm border-gray-700/50 hover:border-blue-400/50 transition-all duration-300 overflow-hidden relative">
                 <div className={`absolute inset-0 bg-gradient-to-br ${project.gradient} opacity-0 group-hover:opacity-5 transition-opacity duration-300`} />
-                
+
                 <CardHeader className="relative">
                   <div className="flex items-center justify-between mb-4">
                     <motion.div
@@ -77,12 +86,16 @@ export function Projects() {
                       <project.icon className="w-6 h-6 text-white" />
                     </motion.div>
                     <div className="flex space-x-2">
-                      <Button size="sm" variant="ghost" className="text-gray-400 hover:text-blue-400">
-                        <ExternalLink size={16} />
-                      </Button>
-                      <Button size="sm" variant="ghost" className="text-gray-400 hover:text-blue-400">
-                        <Github size={16} />
-                      </Button>
+                      <a href={project.demo} target="_blank" rel="noopener noreferrer">
+                        <Button size="sm" variant="ghost" className="text-gray-400 hover:text-blue-400" disabled={project.demo === "#"}>
+                          <ExternalLink size={16} />
+                        </Button>
+                      </a>
+                      <a href={project.github} target="_blank" rel="noopener noreferrer">
+                        <Button size="sm" variant="ghost" className="text-gray-400 hover:text-blue-400" disabled={project.github === "#"}>
+                          <Github size={16} />
+                        </Button>
+                      </a>
                     </div>
                   </div>
                   <CardTitle className="text-white group-hover:text-blue-400 transition-colors duration-300">
@@ -92,7 +105,7 @@ export function Projects() {
                     {project.description}
                   </CardDescription>
                 </CardHeader>
-                
+
                 <CardContent className="relative">
                   <div className="flex flex-wrap gap-2">
                     {project.tech.map((tech) => (

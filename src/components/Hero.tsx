@@ -87,8 +87,8 @@ export function Hero() {
           transition={{ delay: 1.5, duration: 0.8 }}
           className="space-y-4"
         >
-          <div className="text-lg text-gray-400">Graduate AI Engineer</div>
-          <div className="text-blue-400">Building Intelligent Systems • Python • NLP • Deep Learning</div>
+          <div className="text-lg text-gray-400">AI & ML Engineer at Atreya Innovations</div>
+          <div className="text-blue-400">Building Production-Ready AI/ML Solutions • Python • NLP • Deep Learning</div>
         </motion.div>
       </div>
     </section>

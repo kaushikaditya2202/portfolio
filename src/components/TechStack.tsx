@@ -4,38 +4,38 @@ import { motion } from 'motion/react';
 export function TechStack() {
   const techCategories = [
     {
-      category: "Programming Languages",
+      category: "AI & Generative AI",
+      skills: [
+        { name: "RAG Systems", level: 92, icon: "🤖" },
+        { name: "LLMs (OpenAI/Gemini)", level: 90, icon: "🧠" },
+        { name: "Vector Search (FAISS)", level: 85, icon: "🔍" },
+        { name: "Prompt Tuning", level: 88, icon: "✍️" }
+      ]
+    },
+    {
+      category: "Machine Learning & CV",
       skills: [
         { name: "Python", level: 95, icon: "🐍" },
-        { name: "SQL", level: 90, icon: "🗃️" },
-        { name: "JavaScript", level: 85, icon: "⚡" },
-        { name: "R", level: 80, icon: "📊" }
+        { name: "OpenCV", level: 85, icon: "👁️" },
+        { name: "Yolo", level: 82, icon: "🎯" },
+        { name: "Scikit-learn", level: 90, icon: "🔬" }
       ]
     },
     {
-      category: "AI/ML Frameworks",
+      category: "Cloud & Deployment",
       skills: [
-        { name: "TensorFlow", level: 90, icon: "🧠" },
-        { name: "PyTorch", level: 85, icon: "🔥" },
-        { name: "Scikit-learn", level: 95, icon: "🔬" },
-        { name: "HuggingFace", level: 88, icon: "🤗" }
+        { name: "AWS (Lambda/EC2)", level: 85, icon: "☁️" },
+        { name: "Google Cloud (VertexAI)", level: 88, icon: "⚡" },
+        { name: "FastAPI/Flask", level: 90, icon: "🚀" },
+        { name: "Docker", level: 80, icon: "🐳" }
       ]
     },
     {
-      category: "Data & Visualization",
+      category: "Languages & Tools",
       skills: [
-        { name: "Pandas", level: 95, icon: "🐼" },
-        { name: "NumPy", level: 90, icon: "🔢" },
-        { name: "Power BI", level: 90, icon: "📈" },
-        { name: "Matplotlib", level: 85, icon: "📊" }
-      ]
-    },
-    {
-      category: "Tools & Platforms",
-      skills: [
-        { name: "Flask", level: 85, icon: "⚗️" },
-        { name: "Docker", level: 80, icon: "🐳" },
-        { name: "Git", level: 90, icon: "🌱" }
+        { name: "SQL", level: 85, icon: "🗃️" },
+        { name: "Git", level: 90, icon: "🌱" },
+        { name: "Data Labeling", level: 85, icon: "🏷️" }
       ]
     }
   ];

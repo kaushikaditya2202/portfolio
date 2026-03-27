@@ -5,20 +5,28 @@ import { Briefcase, GraduationCap, TrendingUp } from 'lucide-react';
 export function Experience() {
   const experiences = [
     {
-      title: "Data Analyst",
-      company: "University of West London",
-      period: "March 2024 - June 2024",
-      description: "Leading data analysis initiatives, developing insights from complex datasets, and creating visualization dashboards for academic research projects.",
-      icon: GraduationCap,
-      skills: ["Python", "SQL", "Power BI", "Statistical Analysis"]
+      title: "AI Engineer",
+      company: "Atreya Innovations Pvt Ltd",
+      period: "June 2025 - Present",
+      description: "Working in the research team of AI based medical devices to build RAG-based chatbots using OpenAI and Gemini. Handled end-to-end deployment and prompt tuning on AWS (Lambda, EC2) and GCP (Cloud Run, Vertex AI).",
+      icon: Briefcase,
+      skills: ["RAG", "GenAI", "AWS", "GCP", "FAISS", "Gemini"]
     },
     {
-      title: "Data Analyst Intern",
-      company: "Protrainy",
-      period: "September 2021 - January 2022",
-      description: "Collaborated on machine learning projects, performed data preprocessing and feature engineering, and contributed to predictive modeling initiatives.",
+      title: "Data Annotator",
+      company: "Anolytics.ai (Cogito)",
+      period: "September 2024 - April 2025",
+      description: "Performed data labeling on Labelbox for e-commerce products. Supported ML models in NLP and Computer Vision through semantic annotation and trend-based categorization.",
       icon: TrendingUp,
-      skills: ["Machine Learning", "Data Preprocessing", "Feature Engineering", "Model Training"]
+      skills: ["Data Labeling", "NLP", "Computer Vision", "Labelbox"]
+    },
+    {
+      title: "Software Engineer Trainee Intern",
+      company: "Cairovision Pvt Limited",
+      period: "September 2024 - April 2025",
+      description: "Assisted in developing Computer Vision models using Yolo, OpenCV, and Python for specific project requirements.",
+      icon: Code,
+      skills: ["Yolo", "OpenCV", "Python", "Computer Vision"]
     }
   ];
 

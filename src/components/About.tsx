@@ -27,9 +27,9 @@ export function About() {
             viewport={{ once: true }}
             className="flex justify-center items-center"
           >
-            <img 
-              src={profileImage} 
-              alt="Aditya Kaushik" 
+            <img
+              src={profileImage}
+              alt="Aditya Kaushik"
               className="w-full max-w-md h-auto object-contain drop-shadow-[0_0_30px_rgba(59,130,246,0.3)]"
             />
           </motion.div>
@@ -42,20 +42,26 @@ export function About() {
             className="space-y-6"
           >
             <h3 className="text-2xl font-bold text-white mb-6">
-              Graduate AI Engineer passionate about building intelligent systems
+              AI & ML Engineer passionate about building production-ready intelligent systems
             </h3>
-            
+
             <p className="text-gray-300 text-lg leading-relaxed">
-              I specialize in creating AI-powered solutions that bridge the gap between complex algorithms 
-              and real-world applications. My expertise spans machine learning, natural language processing, 
-              and deep learning technologies.
+              I specialize in creating AI-powered solutions that bridge the gap between complex algorithms
+              and real-world applications. Currently, at Atreya Innovations, I work in the research team of AI-based medical devices 
+              to build RAG-based chatbots using OpenAI and Gemini, with document retrieval via FAISS and Vertex AI.
             </p>
 
             <p className="text-gray-300 text-lg leading-relaxed">
-              With experience as a Data Analyst at the University of West London and Protrainy, I've developed 
-              a strong foundation in data analysis, visualization, and machine learning implementation. I'm 
-              passionate about making AI accessible and impactful.
+              With a strong foundation in Python, Machine Learning, and Cloud technologies (AWS & GCP), 
+              I handle end-to-end deployment of GenAI applications. I am passionate about model deployment, 
+              API development, and solving real-world problems through applied research.
             </p>
+
+            <div className="flex flex-col space-y-2 text-gray-400 mb-6 font-mono text-sm">
+              <p>Email: kaushik.aditya2202@gmail.com</p>
+              <p>Phone: +91 8210282166</p>
+              <p>Location: Pune, Maharashtra</p>
+            </div>
 
             <div className="flex flex-wrap items-center gap-4 md:gap-6 text-gray-400">
               <div className="flex items-center space-x-2">
